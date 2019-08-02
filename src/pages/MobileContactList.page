@@ -1,0 +1,14 @@
+<!--
+ - Created by kreardon on 7/26/2019.
+ -->
+
+<apex:page id="MobileContactList" standardController="Contact" recordSetVar="contacts">
+    <apex:slds />
+    <apex:repeat value="{!contacts}" var="c">
+        <dl class="slds-list_horizontal slds-wrap">
+            <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Contact Name">{!c.Name}</dt>
+            <dt class="slds-item_detail slds-truncate" title="Phone Number">{!c.Phone}</dt>
+        </dl>
+
+    </apex:repeat>
+</apex:page>

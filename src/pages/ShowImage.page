@@ -1,0 +1,11 @@
+<!--
+ - Created by kreardon on 7/22/2019.
+ -->
+
+<apex:page id="ShowImage">
+
+    <h1>Show Image</h1>
+    <apex:image url="https://developer.salesforce.com/files/salesforce-developer-network-logo.png"/>
+    <apex:image alt="kitten1" title="kitten"
+                url="{!URLFOR($Resource.vfimagetest, 'cats/kitten1.jpg')}"/>
+</apex:page>

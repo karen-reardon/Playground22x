@@ -1,0 +1,15 @@
+<!--
+ - Created by kreardon on 7/22/2019.
+ -->
+
+<apex:page id="DisplayUserInfo">
+
+        <apex:pageBlock title="User Status">
+            <apex:pageBlockSection columns="1">
+
+                {! $User.FirstName }
+
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+    </apex:page>

@@ -1,0 +1,16 @@
+<!--
+ - Created by kreardon on 7/22/2019.
+ -->
+
+    <apex:page id="AccountList" standardController="Account" recordSetVar="accounts">
+        <h1>test karen 1</h1>
+            <apex:repeat value="{!accounts}" var="a">
+
+            <!-- Contacts List -->
+                <li>
+                    <apex:outputLink value="/{!a.ID}">{!a.Name}</apex:outputLink>
+
+                </li>
+
+            </apex:repeat>
+</apex:page>

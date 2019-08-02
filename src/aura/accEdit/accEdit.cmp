@@ -1,0 +1,18 @@
+<aura:component description="accEdit" implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId">
+    <aura:attribute name="fullAccountRecord" type="Object"/>
+    <aura:attribute name="accountRecord" type="Object"/>
+    <force:recordData
+            layoutType="FULL"
+            recordId="{!v.recordId}"
+            targetRecord="{!v.fullAccountRecord}"
+            targetFields="{!v.accountRecord}"
+            fields="Name"
+            mode="EDIT">
+    </force:recordData>
+    <lightning:card title="Edit Account">
+        <div class="slds-p-horizontal_small">
+            <p class="slds-text-heading_small"><lightning:input label="Account Name" value="{!v.accountRecord.Name}"/></p>
+            <p class="slds-text-heading_small"><lightning:button label="Save Account" variant="brand" /></p>
+        </div>
+    </lightning:card>
+</aura:component>

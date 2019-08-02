@@ -1,0 +1,19 @@
+<!--
+ - Created by kreardon on 7/22/2019.
+ -->
+
+<apex:page id="ContactView" standardController="Contact">
+
+        <apex:pageBlock title="User Status">
+            <apex:pageBlockSection columns="1">
+
+                {! Contact.FirstName }
+                {! Contact.LastName }
+                {! Contact.Owner.Email}
+                <apex:detail relatedList="false" inlineEdit="true"/>
+
+
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+    </apex:page>

@@ -1,0 +1,12 @@
+<!--
+ - Created by kreardon on 7/26/2019.
+ -->
+
+<apex:page id="ShowAssistantInfo" standardController="Contact">
+    <apex:slds />
+        <dl class="slds-list_horizontal slds-wrap">
+            <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Assistant Name">{!Contact.AssistantName}</dt>
+            <dt class="slds-item_detail slds-truncate" title="Phone Number"><a href="{! "tel:"+ Contact.AssistantPhone}">{!Contact.AssistantPhone}</a></dt>
+        </dl>
+
+</apex:page>

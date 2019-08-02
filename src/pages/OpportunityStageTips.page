@@ -1,0 +1,10 @@
+<!--
+ - Created by kreardon on 7/26/2019.
+ -->
+
+<apex:page id="OpportunityStageTips" standardController="Opportunity">
+    <apex:outputText rendered="{!Opportunity.StageName == 'Prospecting'}">Tip for Prospecting</apex:outputText>
+    <apex:outputText rendered="{!Opportunity.StageName == 'Needs Analysis'}">Tip for Needs Analysis</apex:outputText>
+    <apex:outputText rendered="{!Opportunity.StageName == 'Proposal/Price Quote'}">Tip for Proposal/Price Quote</apex:outputText>
+    <apex:outputText rendered="{!Opportunity.StageName == 'Negotiation/Review'}">Tip for Negotiation/Review</apex:outputText>
+</apex:page>

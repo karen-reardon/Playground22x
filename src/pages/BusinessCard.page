@@ -1,0 +1,14 @@
+<!--
+ - Created by kreardon on 7/26/2019.
+ -->
+
+<apex:page id="BusinessCard">
+<apex:slds />
+    <div>
+        <p>{!$User.FirstName}</p>
+        <p>{!$User.LastName}</p>
+        <p>{!$User.Email}</p>
+        <p>{!$User.Phone}</p>
+        <p>{!$User.Title}</p>
+    </div>
+</apex:page>
